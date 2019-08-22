@@ -31,7 +31,7 @@ namespace Sales.Entity
         public abstract decimal Earnings();       
         public decimal GetPaymentAmount()
         {
-            return Earnings() - (Earnings()/100*15);            
+            return Earnings() - (Earnings()*0.15m);            
         }
         #endregion
     }

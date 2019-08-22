@@ -17,6 +17,18 @@ namespace Sales.Entity
         {
 
         }
+        public Product(int id, string name, decimal price, int quantity)
+            :base(id)
+        {
+            Name = name;
+            Price = price;
+            Quantity = quantity;
+        }
+        public Product(string name, decimal price, int quantity)
+            :this(default, name, price, quantity)
+        {
+
+        }
         #endregion
 
         #region Properties

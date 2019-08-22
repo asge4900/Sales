@@ -31,7 +31,7 @@ namespace Sales.Entity
         public override decimal Earnings()
         {
             return salary;
-        }
+        }       
         #endregion
     }
 }

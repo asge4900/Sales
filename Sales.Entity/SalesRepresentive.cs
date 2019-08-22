@@ -12,7 +12,7 @@ namespace Sales.Entity
         #endregion
 
         #region Constructors
-        public SalesRepresentive(decimal salary, decimal weeklySales, double commsionRate)
+        public SalesRepresentive(decimal salary, decimal weeklySales, double commisionRate)
             :base(salary)
         {
             WeeklySales = weeklySales;
@@ -33,7 +33,7 @@ namespace Sales.Entity
         #region Methods
         public override decimal Earnings()
         {
-            return base.Earnings() + (weeklySales/100);
+            return base.Earnings() + (weeklySales/100) * (decimal) commisionRate;
         }
         #endregion
     }
